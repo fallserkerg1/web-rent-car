@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    width: 100%;
+}
+
+:root {
+    --white: #fff;
+    --grey : #181717;
+    --grey-line : #3d3b3b;
+    --black: #000;
+    --orange: #f58d04;
+    --dark-orange: #612c00;
+}
+
+/* ---- HERO ---- */
+
+.hero {
+    background: var(--black);
+}
+
+/* -- header -- */
+
+.header {
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header .menu {
+    display: flex;
+    gap: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header .menu .list {
+    border-bottom: 5px solid transparent;
+    margin-top: 30px;
+    padding-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .menu .list:hover {
+    border-bottom: 5px solid var(--orange);
+}
+
+.header .menu .btn_action {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    padding: 8px 40px;
+    border-top-left-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .menu .btn_action:hover {
+    transform: scale(1.1);
+    background: var(--orange);
+    color: var(--white);
+}
+
+.header .toggle_btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* -- hero -- */
+
+.container-hero {
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* -- text-side -- */
+
+.container-hero .text-side {
+    width: 40%;
+}
+
+.container-hero .text-side h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.container-hero .text-side h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+
+.container-hero .text-side p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+
+.container-hero .text-side a {
+    font-size: 1.2rem;
+    padding: 12px 45px 18px 45px;
+    border: 3px solid var(--orange);
+    background: transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-hero .text-side a:hover {
+    border: 3px solid transparent;
+    background: var(--orange);
+}
+
+/* -- img-side -- */
+
+.container-hero .img-side {
+    width: 60%;
+}
+
+.container-hero .img-side img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* ---- ABOUT ---- */
+
+.about {
+    background: var(--grey);
+    padding: 2rem 6rem;
+}
+
+.about .container-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* -- img-side -- */
+
+.about .container-about .item-img {
+    width: 60%;
+}
+
+.about .container-about .item-img img {
+    width: 100%;
+}
+
+/* -- img-text -- */
+
+.about .container-about .item-text{
+    gap: 2rem;
+    width: 40%;
+}
+
+.about .container-about .item-text h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+.about .container-about .item-text p {
+    line-height: 2.2rem;
+    padding-bottom: 4rem;
+}
+
+.about .container-about .item-text a {
+    padding: 12px 45px;
+    font-size: 1.1rem;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .container-about .item-text a:hover {
+    background: var(--orange);
+    border: 2px solid transparent;
+    color: var(--white);
+}
+
+/* ---- CHOOSE LUREX ---- */
+
+.choose-lurex {
+    background: var(--grey);
+    padding: 2rem 6rem;
+}
+
+.choose-lurex .title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+
+.choose-lurex .container-choose-lurex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* -- item - card -- */
+
+/* card */
+
+.choose-lurex .container-choose-lurex .item-card {
+    text-align: center;
+    height: 480px;
+    width: 400px;
+    border: 3px solid var(--grey-line);
+    border-radius: 25px;
+    padding: 5rem 1.5rem 3rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.choose-lurex .container-choose-lurex .item-card:hover {
+    background: var(--dark-orange);
+    border: 3px solid transparent;
+}
+
+/* - text card - */
+
+.choose-lurex .container-choose-lurex .item-card i {
+    padding: 25px;
+    font-size: 2rem;
+    background-color: #f58d04;
+    border-radius: 100%;
+    color: var(--black);
+    margin-bottom: 2.5rem;
+}
+
+.choose-lurex .container-choose-lurex .item-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.choose-lurex .container-choose-lurex .item-card p {
+    justify-content: center;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+/* ---- CARS ---- */
+
+.cars {
+    background: var(--grey);
+    padding: 4rem 6rem;
+}
+
+.cars .container-cars {
+    display: flex;
+    flex-direction: column;
+}
+
+.cars .container-cars .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cars .container-cars .content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* -  item-cars - */
+
+.cars .container-cars .items-cars {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 7rem 6rem;
+}
+
+/* -  card-cars - */
+
+.cars .container-cars .items-cars .card-cars {
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 400px;
+    padding: 2rem;
+    border: 3px solid var(--grey-line);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cars .container-cars .items-cars .card-cars:hover {
+    border: 2px solid transparent;
+    background: var(--grey-line);
+}
+
+.cars .container-cars .items-cars .card-cars h3 {
+    font-size: 1.5rem;
+}
+
+.cars .container-cars .items-cars .card-cars img {
+    width: 100%;
+}
+
+.cars .container-cars .items-cars .card-cars h2 {
+    font-size: 1.5rem;
+    color: var(--orange);
+    padding-bottom: 1rem;
+}
+
+.cars .container-cars .items-cars .card-cars .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cars .container-cars .items-cars .card-cars .price h3,
+.cars .container-cars .items-cars .card-cars .price a {
+    font-size: 1.4rem;
+}
+
+.cars .container-cars .items-cars .card-cars .price a:hover {
+    color: var(--orange);
+}
+
+/* -  cta-cars - */
+
+.cars .container-cars .cta-cars {
+    display: flex;
+    justify-content: center;
+}
+
+.cars .container-cars .cta-cars a {
+    font-size: 1.2rem;
+    padding: 10px 45px;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cars .container-cars .cta-cars a:hover {
+    border: 2px solid transparent;
+    background: var(--orange);
+    color: var(--white);
+}
+
+
