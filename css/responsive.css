@@ -11,37 +11,68 @@
 
 @media (max-width: 720px) {
 
-    .header,
-    .about {
-        padding: 2rem 4rem;
+    .header{
+        padding: 2rem;
     }
 
-    .container-hero,
-    .container-about {
+    .about {
+        padding: 0.2rem;
+    }
+
+    .container-hero {
         display: flex;
         flex-flow: column wrap;
         gap: 4rem;
-        padding: 2rem 4rem;
+        padding: 2rem;
+    }
+
+    .container-about {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        gap: 4rem;
+        padding: 2rem;
+    }
+
+    .choose-lurex {
+        padding: 3rem 1rem;
+    }
+
+    .cars {
+        padding: 3rem 2rem;
+    }
+
+    .choose-lurex .container-choose-lurex .item-card {
+        padding: 1.5rem;
+    }
+
+    .cars .container-cars .items-cars {
+        padding: 3rem 1rem;
     }
 
     .container-hero .text-side,
-    .container-hero .img-side,
+    .container-hero .img-side img,
     .about .container-about .item-img,
     .about .container-about .item-text {
         width: 100%;
     }
 }
 
+@media (max-width: 471px) {
+    .cars .container-cars .items-cars .card-cars {
+        height: auto;
+        width: 100%;
+    }
+}
+
 @media (max-width: 339px) {
 
-    .header,
-    .about {
-        padding: 2rem;
+    .container-hero .text-side h3 {
+        font-size: 2.4rem;
     }
 
-    .container-hero,
-    .about .container-about {
-        padding: 2rem;
+    .container-hero .text-side h2 {
+        font-size: 4.1rem;
     }
 
     .container-hero .text-side a {
