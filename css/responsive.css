@@ -42,6 +42,18 @@
         padding: 3rem 2rem;
     }
 
+    .comment {
+        padding: 4rem 2rem;
+    }
+
+    .get-started {
+        padding: 4rem 2rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
     .choose-lurex .container-choose-lurex .item-card {
         padding: 1.5rem;
     }
